@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+}
+
+#container {
+    background-color: rgb(244,247,250);
+    margin: 40px;
+
+}
+
+#tieu-de {
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.noi-dung {
+    margin-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#anh-1 {
+    text-align: center;
+    size: 400px;
+}
+
+#cau-hoi {
+    font-size: 16px;
+}
+
+#cau-tra-loi {
+    font-size: 15px;
+}
+
+#chu-mau {
+    color: rgb(82, 183, 235);
+    font-weight: 500;
+}

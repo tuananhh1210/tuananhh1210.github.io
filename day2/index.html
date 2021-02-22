@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học CSS</title>
+
+    <!-- internal CSS -->
+
+    <style>
+        p {
+            font-weight: 600; /* font-weight hiển thị độ đậm nhạt của chữ*/
+            color: rgb(83, 0, 139);
+            font-size: 18px; /* font-size thay đổi kích cỡ chữ, cỡ bình thường là 17px*/
+        }
+
+        #future {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: darkkhaki;
+        }
+            
+
+        #failure {
+            font-size: 18px;
+            background-color: rgb(68, 168, 43);
+        }
+        
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+    </style>
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- inline CSS -->
+    <h1><span style="color: red; background-color: aquamarine;"> Muốn nắm</span> bắt tâm lý khách hàng hãy tự nắm bắt tâm lý bản thân</h1>
+
+    <p id="future" class="underline uppercase">Tương lai khóc hay cười tùy thuộc vào độ dày của ví</p>
+
+    <p id="failure" class="underline">Vấp ngã ở đâu gấp đôi ở đó</p>
+
+    <p class="truyen-kieu">
+        Đầu lòng hai ả Tố Nga
+        <br>
+        Thúy Kiều là chị, em là Thúy Vân
+    </p>
+
+<!-- Inline CSS > Internal CSS > External CSS -->
+
+<!-- Inline CSS > Selector ID > Selector Class > Selector element -->
+
+</body>
+</html>
