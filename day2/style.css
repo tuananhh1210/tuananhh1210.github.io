@@ -5,7 +5,7 @@
 
 .truyen-kieu {
     font-size: 24px !important; /* important là chọn cố định định dạng*/
-    color: rgb(236, 230, 230);
+    color: rgb(236, 230, 230); color: ;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5; /* khoảng cách giữa các dòng*/
     margin-top: 20px;
@@ -17,3 +17,4 @@
 .truyen-kieu {
     font-size: 30px;
 }
+
