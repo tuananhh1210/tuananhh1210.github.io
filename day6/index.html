@@ -1,0 +1,53 @@
+<!-- Đơn vị tuyệt đối -->
+- là đơn vị mà n được tính dựa trên vậy lý: cm,mm,px,pt,inch
+
+<!-- Đơn vị tương đối -->
+em: đơn vị em này được so với kích thước font-size của đối tượng cha. VD: đối tương cha set font-size là
+15px, thì đối tượng con set font-size là 1 em, nghĩa là font-size của con bằng 15px.
+rem: đơn vị rem này được so với kích thước font-size của trang html(thẻ html). Nếu html có font-size là 20px,
+thì 1 rem= 20px.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        #doan-van::first-letter {
+            color: red;
+            font-size: 24px;
+        }
+
+        #doan-van::first-line {
+            font-style: italic;    
+        }
+
+        #doan-van::selection { /* selection: bôi đen thì sẽ hiển thị */
+            background-color: yellow;
+        }
+
+        #doan-van::before {
+            content: "ĐÂY LÀ CONTENT";
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+        }
+
+        #doan-van::after {
+
+        }
+    </style>
+</head>
+
+<body>
+    <p id="doan-van" class="">
+        “Đây là?” Đôi mắt Đông Bá Tuyết Ưng tốt cỡ nào, thân thể mạnh mẽ vượt xa chân thần, con kiến ngoài cả ức dặm có
+        mấy chân cũng có thể thấy rõ, đừng nói ngọn núi lớn liên miên này, hắn có thể rõ ràng đem ‘diện mạo thật sự’ của
+        ngọn núi lớn liên miên dưới vô số cỏ dại nhìn rõ.
+    </p>
+</body>
+
+</html>

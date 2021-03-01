@@ -1,11 +1,14 @@
-.d {position: fixed;} /* dùng để cố định k di chuyển trong 1 web*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-#message {
+body {
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    color: #464646;
+}
+.message {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -14,9 +17,6 @@
     align-items: center;
     right: 20px;
     bottom: 20px;
-}
-
-.messenger {
     color: rgb(0, 132, 255);
     font-size: 50px;
 }
@@ -24,12 +24,12 @@
 .navigation {
     width: 100%;
     height: 60px;
-    background-color: #34465c;
+    background-color: #34465C;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
-
 }
 
 .logo {
@@ -38,25 +38,25 @@
 }
 
 .logo img {
-    width: 80px;
+    width: 80%;
+    width: 120px;
+    height: 33.58px;
 }
 
 .menu {
-    /* background-color: tomato; */
-    
     margin-right: 20px;
     width: 100%;
-    
 }
 
 .menu-list {
     display: flex;
     justify-content: flex-end;
+    padding: 14px 0px 0px 10px;
 }
 
-.menu-list a{
+.menu-list a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -64,13 +64,20 @@
     list-style-type: none;
     margin-right: 20px;
 }
-
+/* shop icon */
+.shop-icon {
+    color: white;
+    /* border: 1px solid red; */
+    margin: 0px 22px 0px -20px;
+    font-size: 22px;
+}
+/* avata login */
 .avatar {
     width: 60px;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .avatar img {
@@ -89,17 +96,17 @@
     position: relative;
 }
 
-.sub-menu {
+.sub-menu{
     position: absolute;
     padding-top: 20px;
     display: none;
 }
 
-.sub-menu li{
-    color: white;
+.sub-menu li {
+    color: #fff;
     background-color: gray;
     padding: 5px 10px 5px 10px;
-
+    font-style: italic;
 }
 
 .menu-list li:hover .sub-menu {
