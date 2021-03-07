@@ -1,0 +1,12 @@
+body{
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+}
+.container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 2px 0px; 
+    box-sizing: content-box;
+    color: rgb(153, 153, 153);
+    display: block;
+    width: 200px;
+    height: 200px;
+}
