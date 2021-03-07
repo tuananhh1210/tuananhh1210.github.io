@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.container-hover1{
+    background-color: #E4F2FD;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.change-hover{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 3px 1px rgb(0 0 0 / 15%);}
+.ava-hover{
+    gap: 100px;
+    padding: 20px 0 20px 0;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template: 200px 200px 200px / 200px 200px 200px;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.mature{
+    display: none;
+}
+
+.change-hover:hover .ava-chibi {
+    display: none;
+}
+.change-hover:hover .hover-chibi{
+    display: block;
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+.heart-hover{ 
+    padding: 20px 0 20px 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+.heart {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    animation: pulse 1s ease 2s infinite alternate;
+}
+.heart-style{
+    font-size: 150px;
+    color: pink;
+    opacity: 0.5;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.text-hover {
+    padding: 20px 0 20px 0;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    color:#999;
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    display:block;
+    text-align: center;
+}
+
+.flip-hover{  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 5s;
+  transform-style: preserve-3d;
+ }
+ .flip-hover-frist{
+  /* position: absolute; */
+  transform: ;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: white;
+}
+
+.flip-hover-second {
+    /* position: absolute; */
+    translate:  ;
+    backface-visibility: hidden;
+    color: white;
+}
+.flip-hover-third {
+    /* position: absolute; */
+    transform: ;
+    backface-visibility: hidden;
+    color: white;
+}
+@keyframes flip{
+  0%{transform: }
+  50%{transform: rotateX(180deg);}
+  100%{transform: rotateX(360deg)}
+}
+.flip-hover {
+  animation: flip 2s linear infinite alternate;
+}

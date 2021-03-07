@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Modal</title>
+</head>
+<body>
+    <!-- FORM -->
+    <form action="#" method="POST">
+        <label for="username">Họ và tên:</label>
+        <input id="username" type="text" name="username" placeholder="text here ..." required />
+        <br /> <br />
+        <label for="password">Mật khẩu:</label>
+        <input id="password" type="password" name="password" required>
+        <br /> <br />
+        <label for="">Giới tính:</label>
+        <input id="male" type="radio" name="gender" value="male"><label for="male">Nam</label>
+        <input id="female" type="radio" name="gender" value="female"><label for="female">Nữ</label>
+        <input id="other" type="radio" name="gender" value="other"><label for="other">Khác</label>
+        <br /> <br />
+        <label for="">Sở thích:</label>
+        <input id="read-book" type="checkbox" name="favorites" value="read-book"><label for="read-book">Đọc sách</label>
+        <input id="listen-music" type="checkbox" name="favorites" value="listen-music"><label for="listen-music">Nghe nhạc</label>
+        <input id="swimming" type="checkbox" name="favorites" value="swimming"><label for="swimming">Bơi lội</label>
+        <br /> <br />
+        <label for="">Thành phố:</label>
+        <select name="country" id="country">
+            <option value="ha-noi">Hà Nội</option>
+            <option value="hue">Huế</option>
+            <option value="da-nang">Đà Nẵng</option>
+            <option value="tp-ho-chi-minh">TP Hồ Chí Minh</option>
+        </select>
+        <br /> <br />
+        <!-- <input type="button" value="Submit"> -->
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html>
