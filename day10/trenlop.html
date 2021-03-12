@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bàitậptrênlớp</title>
+</head>
+<body>
+    <script>
+        function solonhon(A,B) {
+            if (A > B) {
+            return A;
+            } else {
+                return B;
+            }
+        }
+        function hocluc(x,y,z) {
+            if (x<0 || x>10 || y<0 || y>10 || z<0 || z>10) {
+                console.log("điểm không phù hợp")
+            }
+                return;
+            let a=(x+y+z)/3
+
+            if(a<4) {
+                console.log("học lực yếu");
+            }
+            else if(a<6.5) {
+                console.log("học lực trung bình");
+            }
+            else if(a<8) {
+                console.log("học lực khá");
+            }
+            else {
+                console.log("học lực giỏi");
+            }
+        }
+    </script>
+</body>
+</html>

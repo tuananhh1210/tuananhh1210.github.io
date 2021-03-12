@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baitapbuoi9</title>
+</head>
+<body>
+    <script>
+        function doidoC (F) {
+            let C = (F-32)/ 1.8;
+            return C
+        }
+        function doidoF (C) {
+            let F = (C*1.8) + 32;
+            return F         
+        }
+
+        function VND (VND) {
+            let USD = VND/23000;
+            return USD
+        }
+
+        function USD (USD) {
+            let VND = USD*23000;
+            return VND
+        }
+
+        function theky(n) {
+            let nam = Math.floor((n-1)/100) + 1; //cách 1
+            let theky = Math.ceil(n/100); //cách 2
+            return theky;
+        }
+    </script>
+</body>
+</html>
